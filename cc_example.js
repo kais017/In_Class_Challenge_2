@@ -34,12 +34,12 @@ console.log(applyDiscount(products, 0.1));
 console.log(products)
 console.log("*".repeat(20))
 
-// Task 3:
+// Task 3
 
 let sales = [250, 400, 150, 900, 1200];
 
 function calculateTotalRevenue(sales) {
-return sales.reduce((total, sale) =>total+sales, 0); // 0 is the starting point
+return sales.reduce((total, sale) =>total+sale, 0); // 0 is the starting point
 
 }
 console.log(`Total Rev. 2024 $${calculateTotalRevenue(sales)}`)
@@ -49,7 +49,8 @@ console.log(`Total Rev. 2024 $${calculateTotalRevenue(sales)}`)
 
 let employee = { name: "John Doe", salary: 50000, position: "manager"};
 
-function updateSalary(employee, percentageIncrease)
-{ return employee.salary += employee.salary * percentageIncrease;
-
+function updateSalary(employee, percentageIncrease) {
+     return employee.salary += employee.salary * percentageIncrease;
 }
+console.log(updateSalary(employee, .1));
+
